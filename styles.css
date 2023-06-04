@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); /*font-family: 'Inter', sans-serif;8*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap'); /*font-family: 'Barlow Semi Condensed', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3rem;
+    padding: 0 8rem;
+    background: #01498C;
+    box-shadow: 0 .1rem .2rem rgba(0, 0, 0, 0.5);
+}
+
+nav .navbar{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8rem;
+    height: 100%;
+}
+
+nav .navbar .bx-menu{
+    display: none;
+}
+
+nav .navbar .logo img{
+    height: 2.5rem;
+    padding: 0 .5rem;
+}
+
+nav .navbar .nav-links{
+    height: 100%;
+    line-height: 3rem;
+}
+
+nav .navbar .nav-links .sidebar-logo{
+    display: none;
+}
+
+nav .navbar .nav-links .links{
+    display: flex;
+}
+
+nav .navbar .nav-links .links li{
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 .5rem;
+}
+
+nav .navbar .nav-links .links li a{
+    height: 100%;
+    color: #FFF;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+nav .navbar .nav-links .links li .arrow{
+    height: 100%;
+    width: 1.5rem;
+    text-align: center;
+    line-height: 3rem;
+    font-size: large;
+    color: #FFF;
+    transition: all .3 ease;
+}
+
+nav .navbar .nav-links .links li:hover .oszkole-arrow,
+nav .navbar .nav-links .links li:hover .dlaucznia-arrow,
+nav .navbar .nav-links .links li:hover .dlarodzica-arrow,
+nav .navbar .nav-links .links li:hover .dlakandydata-arrow{
+    transform: rotate(180deg);
+}
+
+nav .navbar .nav-links .links .submenu{
+    position: absolute;
+    width: 14rem;
+    top: 3rem;
+    left: 0;
+    background: #01498C;
+    border-radius: 0 0 .5rem .5rem;
+    box-shadow: 0 .1rem .2rem rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+nav .navbar .nav-links .links .submenu li{
+    padding: 0 1rem;
+    border-top: .1rem solid rgba(255, 255, 255, 0.5);
+}
+
+nav .navbar .nav-links .links .submenu li a{
+   font-size: large;
+}
+
+nav .navbar .nav-links .links li:hover .oszkole-submenu,
+nav .navbar .nav-links .links li:hover .dlaucznia-submenu,
+nav .navbar .nav-links .links li:hover .dlarodzica-submenu,
+nav .navbar .nav-links .links li:hover .dlakandydata-submenu{
+    display: block;
+}
+
+/* 1366 */ /* 1200 */ /* 1024 */ /* 800 */ /* 768 */ /* 480 */ /* 320 */
+
+@media screen and (max-width: 1590px){ /* 1366 */
+    nav{
+        padding: 0 7rem;
+    }
+    nav .navbar .logo img{
+        height: 2.2rem;
+        padding: 0 .5rem;
+    }
+    nav .navbar .nav-links .links li a, nav .navbar .nav-links .links .submenu li a{
+        font-size: 0.9rem;
+    }
+    nav .navbar .nav-links .links .submenu{
+        width: 13rem;
+    }
+    nav .navbar .nav-links .links .submenu li{
+        padding: 0 .9rem;
+    }
+}
+
+@media screen and (max-width: 1460px){
+    nav{
+        padding: 0 6rem;
+    }
+
+    nav .navbar .logo img{
+        height: 1.9rem;
+        padding: 0 .5rem;
+    }
+    nav .navbar .nav-links .links li a, nav .navbar .nav-links .links .submenu li a{
+        font-size: 0.8rem;
+    }
+    nav .navbar .nav-links .links .submenu{
+        width: 12rem;
+    }
+    nav .navbar .nav-links .links .submenu li{
+        padding: 0 .8rem;
+    }
+}
+
+@media screen and (max-width: 1330px){
+    nav{
+        padding: 0 5rem;
+    } 
+    nav .navbar .logo img{
+        height: 1.6rem;
+        padding: 0 .5rem;
+    }
+    nav .navbar .nav-links .links li a, nav .navbar .nav-links .links .submenu li a{
+        font-size: 0.7rem;
+    }
+
+    nav .navbar .nav-links .links .submenu{
+        width: 11rem;
+    }
+    nav .navbar .nav-links .links .submenu li{
+        padding: 0 .7rem;
+    }
+}
+
+@media screen and (max-width: 1180px){
+    nav{
+        padding: 0 4rem;
+    }
+    nav .navbar{
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    nav .navbar .logo img{
+        height: 1.3rem;
+        padding: 0 .5rem;
+    }
+    nav .navbar .nav-links .links li, nav .navbar .nav-links .links .submenu li a{
+        font-size: 0.6rem;
+        padding: 0 .25rem;
+    }
+    nav .navbar .nav-links .links .submenu{
+        width: 10rem;
+    }
+    nav .navbar .nav-links .links .submenu li{
+        padding: 0 .6rem;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    nav{
+        padding: 0 3rem;
+    }
+    nav .navbar{
+        padding: 0rem;
+    }
+
+    nav .navbar .nav-links{
+        display: block;
+        position: fixed;
+        background: #01498C;
+        top: 0;
+        left: -100%;
+        min-width: 15rem;
+        max-width: 20rem;
+        padding: 1rem;
+        line-height: 2rem;
+        transition: all .6s ease ;
+        z-index: 100;
+    }
+
+    nav .navbar .bx-menu{
+        color: #FFF;
+        font-size: larger;
+        display: block;
+    }
+
+    nav .navbar .nav-links .sidebar-logo{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    .nav-links .sidebar-logo .bx-x{
+        color: #FFF;
+        font-size: x-large;
+    }
+
+    nav .navbar .nav-links .links{
+        display: block;
+        margin-top: 1rem;
+    }
+
+    nav .navbar .nav-links .links li{
+        display: block;
+        box-shadow: none;
+    }
+
+    nav .navbar .nav-links .links .submenu{
+        display: none;
+        position: relative;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+    }
+
+    nav .navbar .nav-links .links .submenu li{
+        border: none;
+    }
+
+    nav .navbar .nav-links .links li:hover .oszkole-submenu,
+    nav .navbar .nav-links .links li:hover .dlaucznia-submenu,
+    nav .navbar .nav-links .links li:hover .dlarodzica-submenu,
+    nav .navbar .nav-links .links li:hover .dlakandydata-submenu{
+        display: none;
+    }
+
+    nav .navbar .nav-links .links li .arrow{
+        line-height: 1rem;
+    }
+
+    nav .navbar .nav-links .links li:hover .oszkole-arrow,
+    nav .navbar .nav-links .links li:hover .dlaucznia-arrow,
+    nav .navbar .nav-links .links li:hover .dlarodzica-arrow,
+    nav .navbar .nav-links .links li:hover .dlakandydata-arrow{
+        transform: rotate(0deg);
+    }
+
+    nav .navbar .nav-links.show-oszkole .links .submenu.oszkole-submenu,
+    nav .navbar .nav-links.show-dlaucznia .links .submenu.dlaucznia-submenu,
+    nav .navbar .nav-links.show-dlarodzica .links .submenu.dlarodzica-submenu,
+    nav .navbar .nav-links.show-dlakandydata .links .submenu.dlakandydata-submenu{
+        display: block;
+    }
+
+    nav .navbar .nav-links.show-oszkole .links li:hover .oszkole-arrow,
+    nav .navbar .nav-links.show-dlaucznia .links li:hover .dlaucznia-arrow,
+    nav .navbar .nav-links.show-dlarodzica .links li:hover .dlarodzica-arrow,
+    nav .navbar .nav-links.show-dlakandydata .links li:hover .dlakandydata-arrow{
+        transform: rotate(180deg);
+    }
+}
+
+@media screen and (max-width: 520px){
+    nav .navbar .nav-links{
+        min-width: 100%;
+    }
+}
