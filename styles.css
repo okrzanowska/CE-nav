@@ -215,7 +215,7 @@ nav{
 
     .bx-menu{
         color: #FFF;
-        font-size: larger;
+        font-size: xx-large;
         display: block;
     }
 
@@ -227,17 +227,20 @@ nav{
 
     .bx-x{
         color: #FFF;
-        font-size: x-large;
+        font-size: xx-large;
     }
 
     .nav__list{
         display: block;
-        margin-top: 1rem;
+        margin-top: .9rem;
     }
 
     .nav__item{
         display: block;
         box-shadow: none;
+    }
+    .nav__link{
+        font-size: 1rem;
     }
 
     .submenu{
@@ -288,5 +291,8 @@ nav{
 @media screen and (max-width: 520px){
     .nav__menu{
         min-width: 100%;
+    }
+    .nav__link{
+        font-size: 1.1rem;
     }
 }
