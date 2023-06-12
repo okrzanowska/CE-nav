@@ -20,7 +20,7 @@ nav{
     box-shadow: 0 .1rem .2rem rgba(0, 0, 0, 0.5);
 }
 
-nav .navbar{
+.nav{
     margin: auto;
     display: flex;
     align-items: center;
@@ -29,29 +29,29 @@ nav .navbar{
     height: 100%;
 }
 
-nav .navbar .bx-menu{
+.bx-menu{
     display: none;
 }
 
-nav .navbar .logo img{
+.nav__logo{
     height: 2.5rem;
     padding: 0 .5rem;
 }
 
-nav .navbar .nav-links{
+.nav__menu{
     height: 100%;
     line-height: 3rem;
 }
 
-nav .navbar .nav-links .sidebar-logo{
+.nav__sidebar{
     display: none;
 }
 
-nav .navbar .nav-links .links{
+.nav__list{
     display: flex;
 }
 
-nav .navbar .nav-links .links li{
+.nav__item{
     list-style: none;
     position: relative;
     display: flex;
@@ -59,14 +59,14 @@ nav .navbar .nav-links .links li{
     padding: 0 .5rem;
 }
 
-nav .navbar .nav-links .links li a{
+.nav__link{
     height: 100%;
     color: #FFF;
     text-decoration: none;
     white-space: nowrap;
 }
 
-nav .navbar .nav-links .links li .arrow{
+.arrow{
     height: 100%;
     width: 1.5rem;
     text-align: center;
@@ -76,14 +76,14 @@ nav .navbar .nav-links .links li .arrow{
     transition: all .3 ease;
 }
 
-nav .navbar .nav-links .links li:hover .oszkole-arrow,
-nav .navbar .nav-links .links li:hover .dlaucznia-arrow,
-nav .navbar .nav-links .links li:hover .dlarodzica-arrow,
-nav .navbar .nav-links .links li:hover .dlakandydata-arrow{
+.nav__item:hover .oszkole-arrow,
+.nav__item:hover .dlaucznia-arrow,
+.nav__item:hover .dlarodzica-arrow,
+.nav__item:hover .dlakandydata-arrow{
     transform: rotate(180deg);
 }
 
-nav .navbar .nav-links .links .submenu{
+.submenu{
     position: absolute;
     width: 14rem;
     top: 3rem;
@@ -94,39 +94,39 @@ nav .navbar .nav-links .links .submenu{
     display: none;
 }
 
-nav .navbar .nav-links .links .submenu li{
+.nav__item-submenu{
     padding: 0 1rem;
     border-top: .1rem solid rgba(255, 255, 255, 0.5);
 }
 
-nav .navbar .nav-links .links .submenu li a{
+.nav__link-submenu{
    font-size: large;
 }
 
-nav .navbar .nav-links .links li:hover .oszkole-submenu,
-nav .navbar .nav-links .links li:hover .dlaucznia-submenu,
-nav .navbar .nav-links .links li:hover .dlarodzica-submenu,
-nav .navbar .nav-links .links li:hover .dlakandydata-submenu{
+.nav__item:hover .oszkole-submenu,
+.nav__item:hover .dlaucznia-submenu,
+.nav__item:hover .dlarodzica-submenu,
+.nav__item:hover .dlakandydata-submenu{
     display: block;
 }
 
 /* 1366 */ /* 1200 */ /* 1024 */ /* 800 */ /* 768 */ /* 480 */ /* 320 */
 
-@media screen and (max-width: 1590px){ /* 1366 */
+@media screen and (max-width: 1590px){
     nav{
         padding: 0 7rem;
     }
-    nav .navbar .logo img{
+    .nav__logo{
         height: 2.2rem;
         padding: 0 .5rem;
     }
-    nav .navbar .nav-links .links li a, nav .navbar .nav-links .links .submenu li a{
+    .nav__link{
         font-size: 0.9rem;
     }
-    nav .navbar .nav-links .links .submenu{
+    .submenu{
         width: 13rem;
     }
-    nav .navbar .nav-links .links .submenu li{
+    .nav__item-submenu{
         padding: 0 .9rem;
     }
 }
@@ -135,18 +135,17 @@ nav .navbar .nav-links .links li:hover .dlakandydata-submenu{
     nav{
         padding: 0 6rem;
     }
-
-    nav .navbar .logo img{
+    .nav__logo{
         height: 1.9rem;
         padding: 0 .5rem;
     }
-    nav .navbar .nav-links .links li a, nav .navbar .nav-links .links .submenu li a{
+    .nav__link{
         font-size: 0.8rem;
     }
-    nav .navbar .nav-links .links .submenu{
+    .submenu{
         width: 12rem;
     }
-    nav .navbar .nav-links .links .submenu li{
+    .nav__item-submenu{
         padding: 0 .8rem;
     }
 }
@@ -155,18 +154,17 @@ nav .navbar .nav-links .links li:hover .dlakandydata-submenu{
     nav{
         padding: 0 5rem;
     } 
-    nav .navbar .logo img{
+    .nav__logo{
         height: 1.6rem;
         padding: 0 .5rem;
     }
-    nav .navbar .nav-links .links li a, nav .navbar .nav-links .links .submenu li a{
+    .nav__link{
         font-size: 0.7rem;
     }
-
-    nav .navbar .nav-links .links .submenu{
+    .submenu{
         width: 11rem;
     }
-    nav .navbar .nav-links .links .submenu li{
+    .nav__item-submenu{
         padding: 0 .7rem;
     }
 }
@@ -175,22 +173,22 @@ nav .navbar .nav-links .links li:hover .dlakandydata-submenu{
     nav{
         padding: 0 4rem;
     }
-    nav .navbar{
+    .nav{
         max-width: 100%;
         padding: 0 1rem;
     }
-    nav .navbar .logo img{
+    .nav__logo{
         height: 1.3rem;
         padding: 0 .5rem;
     }
-    nav .navbar .nav-links .links li, nav .navbar .nav-links .links .submenu li a{
+    .nav__link{
         font-size: 0.6rem;
         padding: 0 .25rem;
     }
-    nav .navbar .nav-links .links .submenu{
+    .submenu{
         width: 10rem;
     }
-    nav .navbar .nav-links .links .submenu li{
+    .nav__item-submenu{
         padding: 0 .6rem;
     }
 }
@@ -199,11 +197,11 @@ nav .navbar .nav-links .links li:hover .dlakandydata-submenu{
     nav{
         padding: 0 3rem;
     }
-    nav .navbar{
+    .nav{
         padding: 0rem;
     }
 
-    nav .navbar .nav-links{
+    .nav__menu{
         display: block;
         position: fixed;
         background: #01498C;
@@ -217,34 +215,34 @@ nav .navbar .nav-links .links li:hover .dlakandydata-submenu{
         z-index: 100;
     }
 
-    nav .navbar .bx-menu{
+    .bx-menu{
         color: #FFF;
         font-size: larger;
         display: block;
     }
 
-    nav .navbar .nav-links .sidebar-logo{
+    .nav__sidebar{
         display: flex;
         align-items: baseline;
         justify-content: space-between;
     }
 
-    .nav-links .sidebar-logo .bx-x{
+    .bx-x{
         color: #FFF;
         font-size: x-large;
     }
 
-    nav .navbar .nav-links .links{
+    .nav__list{
         display: block;
         margin-top: 1rem;
     }
 
-    nav .navbar .nav-links .links li{
+    .nav__item{
         display: block;
         box-shadow: none;
     }
 
-    nav .navbar .nav-links .links .submenu{
+    .submenu{
         display: none;
         position: relative;
         top: 0;
@@ -252,45 +250,45 @@ nav .navbar .nav-links .links li:hover .dlakandydata-submenu{
         box-shadow: none;
     }
 
-    nav .navbar .nav-links .links .submenu li{
+    .nav__item-submenu{
         border: none;
     }
 
-    nav .navbar .nav-links .links li:hover .oszkole-submenu,
-    nav .navbar .nav-links .links li:hover .dlaucznia-submenu,
-    nav .navbar .nav-links .links li:hover .dlarodzica-submenu,
-    nav .navbar .nav-links .links li:hover .dlakandydata-submenu{
+    .nav__item:hover .oszkole-submenu,
+    .nav__item:hover .dlaucznia-submenu,
+    .nav__item:hover .dlarodzica-submenu,
+    .nav__item:hover .dlakandydata-submenu{
         display: none;
     }
 
-    nav .navbar .nav-links .links li .arrow{
+    .arrow{
         line-height: 1rem;
     }
 
-    nav .navbar .nav-links .links li:hover .oszkole-arrow,
-    nav .navbar .nav-links .links li:hover .dlaucznia-arrow,
-    nav .navbar .nav-links .links li:hover .dlarodzica-arrow,
-    nav .navbar .nav-links .links li:hover .dlakandydata-arrow{
+    .nav__item:hover .oszkole-arrow,
+    .nav__item:hover .dlaucznia-arrow,
+    .nav__item:hover .dlarodzica-arrow,
+    .nav__item:hover .dlakandydata-arrow{
         transform: rotate(0deg);
     }
 
-    nav .navbar .nav-links.show-oszkole .links .submenu.oszkole-submenu,
-    nav .navbar .nav-links.show-dlaucznia .links .submenu.dlaucznia-submenu,
-    nav .navbar .nav-links.show-dlarodzica .links .submenu.dlarodzica-submenu,
-    nav .navbar .nav-links.show-dlakandydata .links .submenu.dlakandydata-submenu{
+    .nav__menu.show-oszkole .oszkole-submenu,
+    .nav__menu.show-dlaucznia .dlaucznia-submenu,
+    .nav__menu.show-dlarodzica .dlarodzica-submenu,
+    .nav__menu.show-dlakandydata .dlakandydata-submenu{
         display: block;
     }
 
-    nav .navbar .nav-links.show-oszkole .links li:hover .oszkole-arrow,
-    nav .navbar .nav-links.show-dlaucznia .links li:hover .dlaucznia-arrow,
-    nav .navbar .nav-links.show-dlarodzica .links li:hover .dlarodzica-arrow,
-    nav .navbar .nav-links.show-dlakandydata .links li:hover .dlakandydata-arrow{
+    .nav__menu.show-oszkole .nav__item:hover .oszkole-arrow,
+    .nav__menu.show-dlaucznia .nav__item:hover .dlaucznia-arrow,
+    .nav__menu.show-dlarodzica .nav__item:hover .dlarodzica-arrow,
+    .nav__menu.show-dlakandydata .nav__item:hover .dlakandydata-arrow{
         transform: rotate(180deg);
     }
 }
 
 @media screen and (max-width: 520px){
-    nav .navbar .nav-links{
+    .nav__menu{
         min-width: 100%;
     }
 }

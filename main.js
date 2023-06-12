@@ -1,10 +1,10 @@
 // SIDEBAR - OPEN AND CLOSE
 
-let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuOpenBtn = document.querySelector(".nav .bx-menu");
 
-let closeOpenBtn = document.querySelector(".nav-links .bx-x");
+let closeOpenBtn = document.querySelector(".nav__menu .bx-x");
 
-let navLinks = document.querySelector(".nav-links");
+let navLinks = document.querySelector(".nav__menu");
 
 menuOpenBtn.addEventListener("click", ()=>{
     navLinks.style.left = "0";
@@ -16,23 +16,23 @@ closeOpenBtn.addEventListener("click", ()=>{
 
 // SUBMENU - OPEN AND CLOSE
 
-let oszkoleArrow = document.querySelector(".oszkole-arrow");
-oszkoleArrow.addEventListener("click", ()=>{
+let oszkoleDropdown = document.querySelector(".oszkole-dropdown");
+oszkoleDropdown.addEventListener("click", ()=>{
     navLinks.classList.toggle("show-oszkole");
 });
 
-let dlauczniaArrow = document.querySelector(".dlaucznia-arrow");
-dlauczniaArrow.addEventListener("click", ()=>{
+let dlauczniaDropdown = document.querySelector(".dlaucznia-dropdown");
+dlauczniaDropdown.addEventListener("click", ()=>{
     navLinks.classList.toggle("show-dlaucznia");
 });
 
-let dlarodzicaArrow = document.querySelector(".dlarodzica-arrow");  
-dlarodzicaArrow.addEventListener("click", ()=>{
+let dlarodzicaDropdown = document.querySelector(".dlarodzica-dropdown");  
+dlarodzicaDropdown.addEventListener("click", ()=>{
     navLinks.classList.toggle("show-dlarodzica");
 });
 
-let dlakandydataArrow = document.querySelector(".dlakandydata-arrow");  
-dlakandydataArrow.addEventListener("click", ()=>{
+let dlakandydataDropdown = document.querySelector(".dlakandydata-dropdown");  
+dlakandydataDropdown.addEventListener("click", ()=>{
     navLinks.classList.toggle("show-dlakandydata");
 });
 
